@@ -1,0 +1,346 @@
+ {% extends 'layout/base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <!--
+    ==================================================
+    Slider Section Start
+    ================================================== -->
+    <section id="hero-area" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="block wow fadeInUp" data-wow-delay=".3s">
+                        <!-- Slider -->
+                        <section class="cd-intro">
+                            <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s" >
+                                <span>HI, MON NOM EST MAGIB & JE SUIS</span><br>
+                                <span class="cd-words-wrapper">
+                        <b class="is-visible">WEB-DEVELOPPER</b>
+                        <b>FRONT_END</b>
+                        <b>BACK_END</b>
+                    </span>
+                            </h1>
+                        </section> <!-- cd-intro -->
+                        <!-- /.slider -->
+                        <h2 class="wow fadeInUp animated" data-wow-delay=".6s" >
+                            Fan de nouvelles technologies, j'ai choisi de suivre cette voie car mon rêve est de créer <br>
+                            et de développer de nouvelles applications et pourquoi pas contribuer au futur!!
+                        </h2>
+                        <a class="btn-lines dark light wow fadeInUp animated smooth-scroll btn btn-default btn-green" data-wow-delay=".9s" href="#works" data-section="#works">Mes Traveaux</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#main-slider-->
+
+    <!--
+    ==================================================
+    About Section Start
+    ================================================== -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <h2>
+                            ABOUT ME
+                        </h2>
+
+                        <h3>Maintenance Informatique</h3>
+                        <p>
+                            j'ai fait de la Maintenance informatique pendant 3 ans. Mes tâches étaient la réparation des PC et du réseau en entreprise.
+                        </p>
+                        <h3>Conseillé Technique</h3>
+                        <p>
+                            j'ai été conseillé technique dans un centre d'appel où mes tâches étaient de guider les clients à recuperer leur service informatique (Internet, TV).
+                        </p>
+
+                        <h3>WEB-DEV</h3>
+                        <p>
+                            Fan de nouvelles technologies, j'ai choisi de faire cette formation car mon rêve est de créer
+                            et de développer de nouvelles applications et pourquoi pas contribuer au futur!!.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
+                        <img src="{{ asset('assets/images/about/about.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /#about -->
+
+
+    <!--
+    ==================================================
+    Portfolio Section Start
+    ================================================== -->
+    <section id="works" class="works">
+        <div class="container">
+            <div class="section-heading">
+                <h1 class="title wow fadeInDown" data-wow-delay=".3s">Mes Projets</h1>
+                <p class="wow fadeInDown" data-wow-delay=".5s">
+                    Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <figure class="wow fadeInLeft animated portfolio-item" data-wow-duration="500ms" data-wow-delay="0ms">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('assets/images/portfolio/item-1.jpg') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('assets/images/portfolio/item-1.jpg') }}">Demo</a>
+                                    <a target="_blank" href="https://2022.webdev-cf2m.be/magib/prefo/index.html">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <h4>
+                                <a href="#">
+                                    Site de Préformation
+                                </a>
+                            </h4>
+                            <p>
+                                Voici mon premier site réalisé
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('assets/images/portfolio/item-2.jpg') }}" class="img-responsive" alt="this is a title" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('assets/images/portfolio/item-2.jpg') }}">Demo</a>
+                                    <a target="_blank" href="https://2022.webdev-cf2m.be/magib/sitefigma/index.php">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <h4>
+                                <a href="#">
+                                    Site BRONKZ
+                                </a>
+                            </h4>
+                            <p>
+                                Site fait à base de FIGMA.(FIGMA)
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('assets/images/portfolio/item-3.jpg') }}" class="img-responsive" alt="" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('assets/images/portfolio/item-3.jpg') }}">Demo</a>
+                                    <a target="_blank" href="https://2022.webdev-cf2m.be/magib/sitefigma/index.php">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <h4>
+                                <a href="#">
+                                    Site cours-français
+                                </a>
+                            </h4>
+                            <p>
+                                voici un mini site fait au cours de français.(php)
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('assets/images/portfolio/item-4.jpg') }}" class="img-responsive" alt="" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('assets/images/portfolio/item-4.jpg') }}">Demo</a>
+                                    <a target="_blank" href="https://2022.webdev-cf2m.be/magib/projet-perso/public/?p=home">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <h4>
+                                <a href="#">
+                                    Mon 1er Portfolio
+                                </a>
+                            </h4>
+                            <p>
+                                Voici mon premier portfolio réalisé à l'école.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('assets/images/portfolio/item-5.jpg') }}" class="img-responsive" alt="" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('assets/images/portfolio/item-1.jpg') }}">Demo</a>
+                                    <a target="_blank" href="https://mlsg.padassy.com/">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <h4>
+                                <a href="#">
+                                    Site MLSG
+                                </a>
+                            </h4>
+                            <p>
+                                Site fait en équipe sur base de Wordpress.
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                        <div class="img-wrapper">
+                            <img src="{{ asset('assets/images/portfolio/item-6.jpg') }}" class="img-responsive" alt="" >
+                            <div class="overlay">
+                                <div class="buttons">
+                                    <a rel="gallery" class="fancybox" href="{{ asset('assets/images/portfolio/item-6.jpg') }}">Demo</a>
+                                    <a target="_blank" href="single-portfolio.html">Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <h4>
+                                <a href="#">
+                                    Site Sénégal
+                                </a>
+                            </h4>
+                            <p>
+                                Site fait en exercice de mon beau pays.(MVC)
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section> <!-- #works -->
+    <!--
+    ==================================================
+    Portfolio Section Start
+    ================================================== -->
+    <section id="feature">
+        <div class="container">
+            <div class="section-heading">
+                <h1 class="title wow fadeInDown" data-wow-delay=".3s">Mes services</h1>
+                <p class="wow fadeInDown" data-wow-delay=".5s">
+                    Voici un petit résumé de mes services pour q'une application web soit parfait.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <div class="media wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-ios-monitor-outline"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">MULTI - PLATEFORME</h4>
+                            <p>Compatible tous supports, tablette & application mobile.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="600ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-ios-cog-outline"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">DÉVELOPPEMENT WEB</h4>
+                            <p>Création de site web | Application sur-mesure.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="900ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-ios-world-outline"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">PROJETS WEB</h4>
+                            <p>Landing page, site vitrine, e-commerce, application web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1200ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-ios-albums-outline"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">RÉFÉRENCEMENT</h4>
+                            <p>CMS | Framework, code optimiser pour le référencement naturel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1500ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-ios-keypad-outline"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">MAINTENANCE WEB</h4>
+                            <p>Gestion d'hébérgement, garantie d'accessibilité, intégration régulière des mises à jour de sécurité.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xs-12">
+                    <div class="media wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="1800ms">
+                        <div class="media-left">
+                            <div class="icon">
+                                <i class="ion-ios-barcode-outline"></i>
+                            </div>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">ACCOMPAGNEMENT</h4>
+                            <p>Je gère entièrement les projets en assurant une communication constante.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> <!-- /#feature -->
+
+
+    <!--
+    ==================================================
+    Call To Action Section Start
+    ================================================== -->
+    <section id="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">Vous voulez plus de renseignement ?</h2>
+                        <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Consulter mon curriculum vitae en ligne.</p>
+                        <a href="{{ path('app_cv') }}" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Cliquer ici</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}
